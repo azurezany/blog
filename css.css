@@ -3,6 +3,24 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.navbar {
+    background-color: #76bbba;
+    margin: 15px;
+    border: solid;
+    border-color: #76bbba;
+    border-width: 5px;
+}
+
+.navbar:hover {
+    background-color: #282d31;
+    color: #76bbba !important;
+}
+
+.nav-header {
+    font-size: 24px;
+}
+
+
 .box-a {
     color: #76bbba;
     background-color: #282d31;
