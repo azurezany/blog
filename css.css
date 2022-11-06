@@ -4,23 +4,21 @@ body {
 }
 
 .navbar {
-    background-color: #76bbba;
-    margin: 15px;
-    border: solid;
-    border-color: #76bbba;
-    border-width: 5px;
-    transition: transform 0.2s;
-}
 
-.navbar:hover {
-    transform: scaleX(0.95);
-    transition: transform 0.2s;
 }
 
 .nav-header {
-    font-size: 24px;
+    border: solid;
+    border-width: 5px;
+    border-color: #76bbba;
+    color: #76bbba;
+    width: 300px;
+    transform: skewX(-10deg);
 }
 
+.inverse-skewX-10 {
+    transform: skewX(10deg) !important;
+}
 
 .box-a {
     color: #76bbba;
