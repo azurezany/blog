@@ -9,11 +9,12 @@ body {
     border: solid;
     border-color: #76bbba;
     border-width: 5px;
+    transition: transform 0.2s;
 }
 
 .navbar:hover {
-    background-color: #282d31;
-    color: #76bbba !important;
+    transform: scaleX(0.95);
+    transition: transform 0.2s;
 }
 
 .nav-header {
