@@ -1,0 +1,24 @@
+body {
+    background-color: #282d31;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.box-a {
+    color: #76bbba;
+    background-color: #282d31;
+    width: 250px;
+    padding: 10px;
+    margin: 10px;
+    border: solid;
+    border-width: 6px;
+    border-color: #76bbba;
+    font-size: 20px;
+    transition: transform 0.2s;
+}
+
+.box-a:hover {
+    background-color: #76bbba;
+    color: #282d31;
+    transform: scale(1.05, 1.05);
+    transition: transform 0.2s;
+}
