@@ -21,13 +21,17 @@ body {
     transform: skewX(-10deg);
 }
 
-.nav-item-self {
+.nav-btn {
+    text-decoration: none !important;
     display: inline;
     color: #282d31;
     font-size: 20px;
     background-color: #76bbba;
     margin: 2px;
     padding: 10px;
+
+    border: solid #76bbba;
+    border-width: 2px;
 }
 
 
