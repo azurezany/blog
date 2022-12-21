@@ -1,17 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&family=JetBrains+Mono:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');
 :root {
-    --subdued-grey: #c9c9c9;
-    --bg-color: #f8f6f5;
+    --blue-g: #9198e5;
+    --green-g: #64e6bd;
 }
 
 body {
-    background-color: var(--bg-color);
+    background: linear-gradient(var(--blue-g), var(--green-g)) no-repeat;
+    background-size: cover;
+    height: 100%;
     font-family: 'DM Sans', sans-serif;
     color: #1f1f1f;
 }
 
 .navbar {
     border-bottom: solid 1px;
+    backdrop-filter: blur(13px);
     height: auto;
     border-color: var(--subdued-grey);
 }
