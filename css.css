@@ -2,9 +2,7 @@
 :root {
     --blue-g: #9198e5;
     --green-g: #64e6bd;
-    --hover-white: #eeeded;
-    --white-opaleft: rgba(255, 255, 255, 0.3);
-    --white-oparight: rgba(255, 255, 255, 0.5);
+    --trans-bor: rgba(255, 255, 255, 0.18);
 }
 
 body {
@@ -23,14 +21,7 @@ body {
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    /*
-    border-radius: 0.5rem;
-    backdrop-filter: blur(13px);
-    
-    border-color: var(--subdued-grey);
-    background: linear-gradient(to right, var(--white-opaleft), var(--white-oparight), var(--white-opaleft));
-    */
+    border: 1px solid var(--trans-bor)
 }
 
 
@@ -49,8 +40,9 @@ body {
 }
 
 .nav-li {
-    display: inline;
+    display: inline-flex;
     padding: 10px;
+    transition: all 0.2s;
 }
 
 .nav-split {
@@ -59,6 +51,8 @@ body {
 }
 
 .nav-li:hover {
-    color: var(--hover-white);
+    color: #1f1f1f;
     cursor: pointer;
+    transform: translate(2px, -2px);
+    text-shadow: -2px 2px #ffffff
 }
