@@ -8,13 +8,15 @@
 body {
     background: linear-gradient(var(--blue-g), var(--green-g)) no-repeat; 
     background-size: cover;
-    height: 100%;
     color: #1f1f1f;
 }
 
 .navbar {
     height: auto;
     padding: 5px;
+
+    position: sticky;
+    top: 1vw;
 
     background: rgba(255, 255, 255, 0.25);
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -24,6 +26,15 @@ body {
     border: 1px solid var(--trans-bor)
 }
 
+/*mobile devices i think*/
+@media (max-width: 768px) {
+    p.nav-title {
+        font-size: 30px;
+    }
+    li.nav-li {
+        font-size: 20px;
+    }
+}
 
 .nav-title {
     font-size: 24px;
@@ -43,6 +54,7 @@ body {
     display: inline-flex;
     padding: 10px;
     transition: all 0.2s;
+    font-size: 18px;
 }
 
 .nav-split {
@@ -51,8 +63,12 @@ body {
 }
 
 .nav-li:hover {
-    color: #1f1f1f;
     cursor: pointer;
     transform: translate(2px, -2px);
-    text-shadow: -2px 2px #ffffff
+    text-shadow: -2px 2px var(--green-g);
+}
+
+li.nav-li > a {
+    text-decoration: none !important;
+    color: #1f1f1f !important;  
 }
