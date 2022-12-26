@@ -3,13 +3,13 @@
     --blue-g: #9198e5;
     --green-g: #64e6bd;
     --trans-bor: rgba(255, 255, 255, 0.18);
+    --content-bg: #ffffff;
 }
 
 body {
     background: linear-gradient(var(--blue-g), var(--green-g)) no-repeat; 
-    background-size: cover;
+    min-height: 100vh;
     color: #1f1f1f;
-    min-height: 100%;
 }
 
 .navbar {
@@ -21,8 +21,8 @@ body {
 
     background: rgba(255, 255, 255, 0.25);
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(13px);
+    -webkit-backdrop-filter: blur(13px);
     border-radius: 10px;
     border: 1px solid var(--trans-bor)
 }
@@ -72,4 +72,15 @@ body {
 li.nav-li > a {
     text-decoration: none !important;
     color: #1f1f1f !important;  
+}
+
+#content {
+    display: flex;
+}
+
+.sidebar {
+    min-width: 20vw;
+    align-self: left;
+    overflow-y: scroll;
+    background-color: var(--content-bg);
 }
